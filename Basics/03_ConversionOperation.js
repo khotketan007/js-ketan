@@ -1,14 +1,14 @@
 // Variable Declaration
 let score = "33";
 
-//Checking the type of the variable
-console.log(typeof score);
+// Checking the type of the variable
+// console.log(typeof score);
 // console.log(typeof(score));
 
-//Converting the String to Number
+// Converting the String to Number
 let valueInNumber = Number(score);
-console.log(typeof valueInNumber);
-console.log(valueInNumber);
+// console.log(typeof valueInNumber);
+// console.log(valueInNumber);
 
 // "33" => 33
 // "33se" => NaN
@@ -17,6 +17,8 @@ console.log(valueInNumber);
 // this is for boolean operation
 let istrue = 1
 let check = Boolean(istrue)
-console.log(istrue);
+// console.log(istrue);
 
 // **********Operations*************
+console.log("Modulo : ",2 % 3)
+console.log("Division : ",2 / 3);
