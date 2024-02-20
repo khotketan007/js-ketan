@@ -14,3 +14,9 @@ console.log(valueInNumber);
 // "33se" => NaN
 // True => 1, False => 0
 
+// this is for boolean operation
+let istrue = 1
+let check = Boolean(istrue)
+console.log(istrue);
+
+// **********Operations*************
