@@ -17,3 +17,7 @@ console.log(balance.toFixed(1));
 //Precision property
 const otherNumber = 23.4843
 console.log(otherNumber.toPrecision(4));
+
+//Tolocalestring (Adding commas in bewteen)
+const newNumber = 10002340
+console.log(newNumber.toLocaleString('en-IN'));
