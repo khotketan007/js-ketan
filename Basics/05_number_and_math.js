@@ -16,4 +16,4 @@ console.log(balance.toFixed(1));
 
 //Precision property
 const otherNumber = 23.4843
-console.log(otherNumber.toPrecision(3));
+console.log(otherNumber.toPrecision(4));
