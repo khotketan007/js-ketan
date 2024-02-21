@@ -40,3 +40,12 @@ const newNumber = 10002340
 // Min Max Function
 // console.log(`Min value in array : ${Math.min(4,2,5,6,77)}`);
 // console.log(`Max value in array : ${Math.max(4,2,5,6,7,34)}`);
+
+console.log(Math.floor((Math.random()*10) + 1));
+
+const min = 10
+const max = 20
+//Logic
+// const randomValue = Math.floor(Math.random() * (max - min + 1)) + min
+// console.log(randomValue)
+console.log(Math.floor(Math.random() * (max - min + 1)) + min)
