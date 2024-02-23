@@ -9,7 +9,7 @@ const myArray = [1, 2 ,3, 4, 5, "Hello"]
 // console.log(myArray[5]);  //Accessing the Element 
 
 //Array declaration Method 2 
-const newArray = new Array(25, 98, 68, "Ketan")
+const newArray = new Array(25, 98, 68,12, 985, "Ketan")
 // console.log(newArray);
 
 //Array Methods
@@ -34,5 +34,18 @@ newArray.shift()
 //join operation
 //It return the array in string format and Bind together
 const joinArray = newArray.join()
-console.log(newArray);
-console.log(`String Fromat Array : ${joinArray}`);
+// console.log(newArray);
+// console.log(`String Fromat Array : ${joinArray}`);
+
+// const newArray = new Array(25, 98, 68, "Ketan")
+
+//slice and splice method
+console.log("Hello DJ Lover", newArray);
+//slice method
+const sliceNewArray = newArray.slice(1, 3)
+console.log(sliceNewArray)
+console.log("Jay Ganesh 72+", newArray);
+//Splice Method
+const spliceNewArray = newArray.splice(1, 3)
+console.log("Omkar 72+", newArray);
+console.log(spliceNewArray)
