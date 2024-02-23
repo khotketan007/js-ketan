@@ -30,3 +30,5 @@ console.log(Array.from("Ketan")[3]);        //=> [3] Getting the element of that
 // Now Different value you can add into the array Ex=> Var, Array
 let a1 = 100,  a2 = 200, a3 = 300
 console.log(Array.of(a1, a2, a3));
+
+// End of the Array_02
