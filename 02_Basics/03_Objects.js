@@ -6,7 +6,8 @@
 // Symbol Declaration
 const mySymbol = Symbol("myFirstKeySymbol")
 
-// Object Declaration
+// Object Declaration 
+// This is Obejct Literals
 const jsUsers = {
     myName : "Ketan",
     "my_Last_name" : "Khot",
