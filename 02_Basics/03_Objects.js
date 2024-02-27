@@ -18,13 +18,27 @@ const jsUsers = {
 }
 
 // console.log(jsUsers);
-console.log(jsUsers["myName"]);
-console.log(jsUsers.myAge);
-console.log(jsUsers["my_Last_name"]);
+// console.log(jsUsers["myName"]);
+// console.log(jsUsers.myAge);
+// console.log(jsUsers["my_Last_name"]);
 // console.log(typeof jsUsers.mySymbol); => type of Data : String 
-console.log(typeof jsUsers[mySymbol]); // You can access using this type
+// console.log(typeof jsUsers[mySymbol]); // You can access using this type
 
 jsUsers.myCity = "Pune"
-Object.freeze(jsUsers)  // You Can't update the Value after using this Object
+// Object.freeze(jsUsers)  // You Can't update the Value after using this Object
 jsUsers.myCity = "Sangli"
-console.log(jsUsers)
+// console.log(jsUsers)
+
+// First Function
+jsUsers.greeting = function (){
+    console.log("Hello Js Users");
+}
+
+//Second Function
+jsUsers.greetingTwo = function (){
+    console.log(`Hii JS User, ${this.myName}`); // Taking the Value from the same object to using this keyword
+}
+
+console.log(jsUsers.greeting());
+console.log(jsUsers.greetingTwo());
+// console.log(jsUsers.greeting);
