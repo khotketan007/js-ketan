@@ -16,9 +16,9 @@ tinderUser.isLoggedIn = false
 // console.log(Object.keys(tinderUser));
 // console.log(Object.values(tinderUser));
 // Entries to Delcare the Every value is in seperate object
-console.log(Object.entries(tinderUser));
+// console.log(Object.entries(tinderUser));
 // To check the Value is present or not
-console.log(tinderUser.hasOwnProperty("id")); //=> It Return the Boolean value
+// console.log(tinderUser.hasOwnProperty("id")); //=> It Return the Boolean value
 
 // New Object Declaration Non-SingleTon Object
 const regularUser = {
@@ -51,3 +51,16 @@ const obj2 = {
 //Another method to combine the two object in single object
 const obj3 = {...obj1, ...obj2}
 // console.log(obj3);
+
+// Object De-Structuring 
+const studentInfo = {
+    fName : "Ketan",
+    lName : "Khot",
+    age : 25
+}
+
+// To Access the Values using following method
+const {fName: myName} = studentInfo
+console.log(myName);                                //=> Op = "Ketan"
+const {age: myAge} = studentInfo
+console.log(myAge);                                   //=> Op = "25"
