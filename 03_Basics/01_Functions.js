@@ -20,7 +20,33 @@ const addition = addTwoNumber(2,6)                                    //=> 2 and
 
 // Argument and Parameter passing different method
 function logInUserMessage(userName) {
-    return `${userName} Just Logged In`
+    // return `${userName} Just Logged In`
 }
 // To print above statement 
-console.log(logInUserMessage("Ketan"));
+// console.log(logInUserMessage("Ketan"));
+
+function calculatePrice(val1, val2, ...num1) {
+    // console.log(val1, val2);
+    return num1
+}
+// console.log(calculatePrice(100, 200, 300, 400));
+
+// How to pass the object into function
+const myInfo = {
+    name : "Ketan",
+    age : 25
+}
+// function to pass the object
+function handleObject(anyObject) {
+    console.log(`Hello ${anyObject.name} you are ${anyObject.age} year old`);
+}
+// Calling Function
+// 1st way to pass the Information
+// handleObject(myInfo)
+
+// 2nd way to pass the infromation
+// you can pass the direct object
+handleObject({
+    name : "Rajesh",
+    age : 46
+})
