@@ -20,9 +20,38 @@ function one(){
     const userName = "Ketan"
     function two() {
         const userAge = 23
-        console.log(userName)
+        // console.log(userName)
     }
     // console.log(userAge)
     two()
 }
 one()
+
+if(true){
+    const firstname = "Ketan"
+    if (firstname === "Ketan") {
+        const lastname = " Khot"
+        // console.log(firstname + lastname);
+    }
+    // console.log(lastname); => you can't Access the lastname here
+}
+// console.log(firstname); => you can't access the firstname here
+
+//-----------Interesrting-----------------
+// This is Called General Function
+// you can calling the function before it's declaration
+// Calling Function
+console.log(addOne(5))
+function addOne(number){
+    return number + 1
+}
+
+
+
+// Some how we called expression in form of Object
+// In this method you can't call the function varable it throws the error
+// addition(5)
+const addition = function (num){
+    return num + 1
+}
+console.log(addition(587));
