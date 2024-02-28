@@ -50,3 +50,13 @@ handleObject({
     name : "Rajesh",
     age : 46
 })
+
+// Array declaration
+const myNewArray = [100, 400, 500, 260, 550]
+
+function returnSecondValue(getArray){
+    return getArray[1] //=>You can put the index here to access the element
+}
+// Printing
+// console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([100,200,300,400]));
