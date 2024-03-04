@@ -12,5 +12,5 @@ for (const key in myObject) {
 
 const programming = ["js", "ruby", "java"]
 for (const key in programming) {
-    console.log(`Index ${}`);
+    console.log(`Key : ${key} and Value : ${programming[key]}`);
 }
