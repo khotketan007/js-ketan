@@ -28,7 +28,14 @@ if (Object.keys(emptyObject).length === 0) {
 // Nullish Coalescing Operator (??): null and undefined
 
 let val1 
-// val1 = 3 ?? 5
-val1 = null ?? 10
+val1 = 3 ?? 5
+// val1 = null ?? 10
+// val1 = undefined ?? 17
+// val1 = null ?? 12 ?? 45 // => Fist vlaue will be assigned
 
 console.log(val1);
+
+// Ternery Operator
+// condition ? true : false
+const iceTearPrice = 100
+iceTearPrice <= 80 ? console.log(`Less then 80`) : console.log(`Gresater then 80`)
