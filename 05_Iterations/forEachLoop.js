@@ -40,5 +40,8 @@ const myCoding = [
         langaugeName : "Python",
         langaugeFile : "py"
     },
-
 ]
+// Applying for Each Loop
+myCoding.forEach( (items) => {
+    console.log(`Langauge ${items.langaugeName} and It's Extension ${items.langaugeFile}`)
+} )
