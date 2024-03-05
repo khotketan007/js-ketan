@@ -1,16 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> DOM Chai aur Code </title>
-</head>
-<body style="background-color: rgb(0, 0, 0); color: rgb(235, 235, 235);">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Chai aur Code</title>
+  </head>
+  <body style="background-color: black; color: aliceblue">
     <div class="parent">
-        <div class="days">Monday</div>
-        <div class="days">Tuesday</div>
-        <div class="days">Wednesday</div>
-        <div class="days">thursday</div>
+      <div class="days">Monday</div>
+      <div class="days">Tuesday</div>
+      <div class="days">Wednesday</div>
+      <div class="days">Thursday</div>
+      <div class="days">Friday</div>
     </div>
-</body>
+  </body>
+  <script>
+    // Check the Data in the parent class
+    let dataInParent = document.querySelector(".parent");
+    // console.log(dataInParent);
+    // console.log(dataInParent.children);
+    // console.log(dataInParent.children[1].innerHTML);
+
+    // now we are Printing the All value in div  of days using for loop
+    // for (let i = 0; i < dataInParent.children.length; i++) {
+    //   console.log(dataInParent.children[i].innerHTML);
+    // }
+
+    // Now we can put the some style to element
+    dataInParent.children[0].style.fontWeight = "bold";
+    dataInParent.children[3].style.textDecorationLine = "underline";
+    // console.log(dataInParent.firstElementChild);
+    // console.log(dataInParent.lastElementChild);
+
+    const day = document.querySelector(".days");
+    // console.log(day);
+    // console.log(day.parentElement);
+    // console.log(day.nextElementSibling);
+
+    // Printing the Nodes
+    console.log("Nodes", dataInParent.childNodes);
+
+    // moving child to parent
+    // const day = document.querySelectorAll(".days");
+    // // console.log(day);
+    // const innerData = Array.from(day);
+    // innerData.forEach((item) => {
+    //   console.log(item);
+    // });
+  </script>
 </html>
