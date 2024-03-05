@@ -25,6 +25,7 @@ const myNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 const cars = [
     { type: "Fiat", model: "500", color: "white" },
     { type: "Ford", model: "Mustang", color: "red" },
+    { type: "Ford", model: "Endavour", color: "white" },
     { type: "Audi", model: "A4", color: "black" },
     { type: "Toyota", model: "Camry", color: "red" },
     { type: "Honda", model: "Civic", color: "blue" },
@@ -40,7 +41,8 @@ const userRe1 = cars.filter( (col) =>
         col.color === 'black'
 )
 console.log(userRe1);
-const userRe2 = cars.filter((colour) => {
-    return colour.color === 'red'
+const userRe2 = cars.filter((item) => {
+    return item.color === 'red' && item.type === 'Ford'
 })
 console.log(userRe2);
+
