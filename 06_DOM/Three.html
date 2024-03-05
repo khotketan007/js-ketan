@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Object Model</title>
+    
+  </head>
+  <body style="background-color: #212121; color: aliceblue"></body>
+  <script>
+    // Creating the div Element
+    const div = document.createElement("div");
+    console.log(div);
+    // Adding some Properties to the div
+    // div.innerHTML = "Hello JS Users";
+    // Creating the text node using following ways
+    const txtNode = document.createTextNode("Welcome to JavaScript World!");
+    // Appending the Text Node to the Div
+    div.appendChild(txtNode);
+    div.id = Math.round(Math.random() * 10 + 1);
+    div.className = "main";
+    div.setAttribute("title", "My Title");
+    div.style.padding = "15px";
+    div.style.margin = "15px";
+
+    // Adding the Created Div element
+    document.body.appendChild(div);
+    // div.style.backgroundColor = "#ff6347";
+    // Displaying the added properties in Console
+    // console.log(`The id of the created Div is ${div.id}`);
+  </script>
+</html>
