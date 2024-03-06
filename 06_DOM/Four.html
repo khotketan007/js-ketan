@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body style="background-color: aqua; color: black;">
+    <ul class="langauge">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+
+    // 1ST Way 
+    // function addLangauge(langName) {
+    //     // creating the Element 
+    //     const li = document.createElement('li')
+    //     // Adding text to the element
+    //     li.innerHTML = `${langName}`
+    //     // Appending the created element into the ul
+    //     document.querySelector('.langauge').appendChild(li);
+    // }
+    // // Calling Function
+    // addLangauge("Python");
+    // addLangauge("TypeScript");
+
+    // Best Optimized Way
+    // Function
+    function addItem(langName){
+        const AddItem = document.createElement('li')
+        AddItem.appendChild(document.createTextNode(langName))
+        document.querySelector('.langauge').appendChild(AddItem)
+    }
+    addItem( "C#")
+    addItem("Java")
+    addItem('Ruby');
+
+    // Editig the Element 1
+    const changeItem2 = document.querySelector('li:nth-child(2)');
+    const newLi2 = document.createElement('li')
+    newLi2.textContent = 'Golang'
+    changeItem2.replaceWith(newLi2)
+
+    // Edit the Element Change the 1 List in item
+    const firstChild = document.querySelector('li:nth-child(1)')
+    firstChild.outerHTML = `<li>PHP</li>`
+
+    // Edit Remove the Element
+    const  removeLang = document.querySelector('li:last-child')
+    removeLang.remove() // or You can Delete 
+
+    // const changeItem3 = document.querySelector('li:nth-child(3)')
+    // const newLi3 = document.createElement('li')
+    // newLi3.textContent = 'Swift By Apple'
+    // changeItem3.replaceWith(newLi3)
+
+    // Adding Element through array
+    // const LangaugeArray = ['Python', 'Java', 'DotNet', 'TypScript']
+    // LangaugeArray.forEach((lang) => {
+    //     addItem(lang);
+    // })
+
+
+</script>
+</html>
