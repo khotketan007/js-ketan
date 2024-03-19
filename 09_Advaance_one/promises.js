@@ -67,8 +67,36 @@ const promiseFive = new Promise(function(resolve, reject){
     }, 1000)
 })
 async function consumePromiseFive(){
-    const response = await promiseFive
-    console.log(response);
+    // const response = await promiseFive
+    // console.log(response);
+    try {
+        const response = await promiseFive
+        console.log(response);
+    } catch (error) {
+        // console.log(error);
+    }
 }
 
+//Function Call
 consumePromiseFive()
+
+// async function getAllUsers(){
+//     try {
+//         const response = await fetch('https://jsonplaceholder.typicode.com/users')
+//         const data = await response.json()
+//         console.log(data);
+//     } catch (error) {
+//         console.log(error);
+//     }
+// }
+// Function Call
+// getAllUsers()
+
+fetch("https://jsonplaceholder.typicode.com/users").then((response) => {
+    return response.json()
+}).then((data) => {
+    console.log(data);
+})
+.catch((error)  => {
+    console.log(error);
+})
