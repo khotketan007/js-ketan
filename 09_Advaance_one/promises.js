@@ -92,6 +92,59 @@ consumePromiseFive()
 // Function Call
 // getAllUsers()
 
+// I'd be glad to explain the code you provided:
+
+// **Code Breakdown:**
+
+// ```javascript
+// async function getAllUsers() {
+//   try {
+//     const response = await fetch('https://jsonplaceholder.typicode.com/users');
+//     const data = await response.json();
+//     console.log(data);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+// ```
+
+// **Explanation:**
+
+// 1. **`async function getAllUsers()`:**
+//    - This line defines an asynchronous function named `getAllUsers`.
+//    - The `async` keyword indicates that this function will potentially perform asynchronous operations (operations that might take time to complete).
+
+// 2. **`try { ... }` Block:**
+//    - This block contains the code that will be executed to fetch and process user data.
+//    - The `try...catch` statement is used for error handling.
+
+// 3. **`const response = await fetch('https://jsonplaceholder.typicode.com/users');`:**
+//    - This line attempts to fetch user data from the provided URL using the `fetch` API.
+//    - `fetch` is a built-in JavaScript function for making asynchronous HTTP requests.
+//    - The URL points to a free, public API that provides sample user data in JSON format.
+//    - The `await` keyword is used before `fetch` because it's an asynchronous operation. The function execution will pause at this point until the fetch operation completes (either successfully or with an error).
+//    - The fetched data is stored in the `response` constant.
+
+// 4. **`const data = await response.json();`:**
+//    - This line attempts to parse the JSON response from the server into a JavaScript object.
+//    - The `.json()` method is called on the `response` object to achieve this.
+//    - Again, `await` is used because parsing JSON can be asynchronous. The function waits for the parsing to finish before proceeding.
+//    - The parsed user data (as a JavaScript object) is stored in the `data` constant.
+
+// 5. **`console.log(data);`:**
+//    - This line assumes you're working in a browser environment or a Node.js environment with access to a console.
+//    - It prints the contents of the `data` variable (the parsed user data) to the console for debugging or inspection purposes.
+
+// 6. **`catch (error) { ... }` Block:**
+//    - This block is part of the `try...catch` statement.
+//    - If any errors occur during the asynchronous operations (fetching or parsing), the code within this block will be executed.
+//    - The `catch` statement takes a parameter, usually named `error`, which will contain details about the error that occurred.
+//    - In this case, the line `console.log(error);` simply logs the error message to the console for debugging purposes.
+
+// **In Summary:**
+
+// This code defines an asynchronous function `getAllUsers` that fetches user data from a JSON API and then logs the parsed data to the console. It uses `async/await` syntax to handle asynchronous operations in a cleaner way compared to traditional callback-based approaches.
+
 fetch("https://jsonplaceholder.typicode.com/users").then((response) => {
     return response.json()
 }).then((data) => {
@@ -99,3 +152,4 @@ fetch("https://jsonplaceholder.typicode.com/users").then((response) => {
 }).catch((error)  => {
     console.log(error);
 })
+
