@@ -1,3 +1,5 @@
 {
-    "editor.fontFamily": "monospace"
+    "editor.fontFamily": "monospace",
+    "editor.fontSize": 17,
+    "liveServer.settings.port": 5501
 }
