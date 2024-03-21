@@ -19,6 +19,7 @@ let heroPower = {
 // This is Top level Hirarchi to add ketan Function in each object
 Object.prototype.ketan = function (){
     console.log(`Ketan Present in all Object`);
+    
 }
 
 Array.prototype.kitkat = function(){
